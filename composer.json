@@ -1,26 +1,23 @@
 {
-    "name": "google/cloud-logging",
-    "description": "Stackdriver Logging Client for PHP",
+    "name": "solarreviews/cloud-logging",
+    "description": "Stackdriver Logging Client for PHP - Conforming to PSR3",
     "license": "Apache-2.0",
     "minimum-stability": "stable",
     "require": {
         "google/cloud-core": "^1.39",
-        "google/gax": "^1.1"
+        "google/gax": "^1.1",
+        "psr/log": "^3"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8|^5.0|^8.0",
         "yoast/phpunit-polyfills": "^1.0",
         "phpspec/prophecy": "^1.10.3",
         "squizlabs/php_codesniffer": "2.*",
-        "phpdocumentor/reflection": "^3.0||^4.0",
         "erusev/parsedown": "^1.6",
         "google/cloud-storage": "^1.3",
         "google/cloud-bigquery": "^1.0",
         "google/cloud-pubsub": "^1.0",
         "opis/closure": "^3"
-    },
-    "provide": {
-        "psr/log-implementation": "1.0|2.0"
     },
     "suggest": {
         "ext-grpc": "The gRPC extension enables use of the performant gRPC transport",
@@ -45,8 +42,5 @@
         "psr-4": {
             "Google\\Cloud\\Logging\\Tests\\": "tests"
         }
-    },
-    "conflict": {
-        "psr/log": ">=3"
     }
 }
